@@ -17,6 +17,9 @@ const Main = () => {
           <br />
 
           <div className="container-button">
+            <Link to="https://github.com/user-attachments/files/18797942/Curriculo.joao.2025.pdf" className="button2">
+              Download CV
+            </Link>
             <Link to="/" className="button">
               My projects
             </Link>
