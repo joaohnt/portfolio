@@ -17,10 +17,13 @@ const Main = () => {
           <br />
 
           <div className="container-button">
-            <Link to="https://github.com/user-attachments/files/18797942/Curriculo.joao.2025.pdf" className="button2">
+            <Link
+              to="https://github.com/user-attachments/files/18800783/CV_Joao2025.pdf"
+              className="button2"
+            >
               Download CV
             </Link>
-            <Link to="/" className="button">
+            <Link to="/projects" className="button">
               My projects
             </Link>
           </div>

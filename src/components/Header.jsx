@@ -18,15 +18,15 @@ const Header = () => {
             </li>
             <li>
               {" "}
-              <Link to="/"> About </Link>{" "}
+              <Link to="/about"> About </Link>{" "}
             </li>
             <li>
               {" "}
-              <Link to="/"> Projects </Link>{" "}
+              <Link to="/projects"> Projects </Link>{" "}
             </li>
             <li>
               {" "}
-              <Link to="/"> Contact </Link>{" "}
+              <Link to="/contact"> Contact </Link>{" "}
             </li>
           </ul>
         </nav>

@@ -41,6 +41,11 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
+/* Garante que o header está acima */
+header {
+  position: relative;
+  z-index: 1000; /* Mantém o header sempre no topo */
+}
 
 /* CONTAINER */
 .container {
@@ -241,4 +246,218 @@ body {
 
 .social-icons a:hover {
   background-color: rgba(52, 152, 219, 1);
+}
+
+/* Estilos para cada projeto individual */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px; /* Mantém a largura fixa */
+  margin: 100px auto 0; /* Empurra os projetos para baixo */
+  position: relative; /* Evita sobreposição */
+  z-index: 1; /* Garante que os projetos fiquem abaixo do header */
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+/* Cada item de projeto */
+.single-item {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.single-item:hover {
+  transform: scale(1.05);
+}
+
+.single-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.single-item h3 {
+  color: #4fa3d1;
+  margin-top: 10px;
+}
+
+.single-item p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Botão do GitHub */
+.single-item a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #4fa3d1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.single-item a:hover {
+  background: #3b82b4;
+  transform: scale(1.05);
+}
+.about-container {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 900px;
+  margin: 120px auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(79, 163, 209, 0.5);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(79, 163, 209, 0.3);
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-container:hover {
+  filter: brightness(1.3); /* Apenas ilumina sem perder qualidade */
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: #4fa3d1;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(79, 163, 209, 0.8);
+  animation: glow 1.5s infinite alternate;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.about-container strong {
+  color: #4fa3d1;
+}
+
+/* Estilizando o GIF */
+.about-gif {
+  width: 682px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin: 20px auto 0; /* Centraliza verticalmente */
+  box-shadow: 0 0 15px rgba(79, 163, 209, 0.7);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(79, 163, 209, 0.8);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(79, 163, 209, 1);
+  }
+}
+ 
+.contact-container {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 120px auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(79, 163, 209, 0.5);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(79, 163, 209, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: #4fa3d1;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-list a {
+  color: #4fa3d1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-list a:hover {
+  color: #357ba9;
+}
+
+/* Ícones */
+.contact-list i {
+  font-size: 1.5rem;
+  color: #4fa3d1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
