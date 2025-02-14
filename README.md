@@ -20,6 +20,11 @@ This is a **full-stack portfolio project** showcasing my work, built using **Rea
 - 🟢 Node.js
 - 🚀 Express.js
 - 🗂️ MongoDB
+  
+  ## Screenshots
+![image](https://github.com/user-attachments/assets/42b27129-e846-41ac-9e99-dabf80c573a0)
+![image](https://github.com/user-attachments/assets/2e34698a-8359-4fc8-84a5-f7c859c93208)
+
 
 # 🌍 Live Demo
 (soon)
