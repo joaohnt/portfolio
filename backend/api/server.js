@@ -17,7 +17,7 @@ app.get("/api/projects", async (request, response) => {
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 app.get("*", async (request, response) => {
-  response.sendFile(path.join(__dirname, "../front-end/dist/index.html"));
+  response.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
 
 async function connectDB() {
