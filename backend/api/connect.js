@@ -17,3 +17,4 @@ async function connectDB() {
 await connectDB();
 
 export const db = client.db("portfolio");
+export default client;

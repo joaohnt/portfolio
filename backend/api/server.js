@@ -20,6 +20,17 @@ app.get("*", async (request, response) => {
   response.sendFile(path.join(__dirname, "../../frontend/dist"));
 });
 
+async function connectDB() {
+  try {
+    await client.connect();
+    console.log("Conectado ao MongoDB!");
+    return client.db("portfolio");
+  } catch (error) {
+    console.error("Erro ao conectar ao MongoDB:", error);
+    process.exit(1);
+  }
+}
+
 app.listen(PORT, () => {
   console.log(`porta: ${PORT}`);
 });
