@@ -14,10 +14,10 @@ app.get("/api/projects", async (request, response) => {
   response.send(await db.collection("projects").find({}).toArray());
 });
 
-app.use(express.static(path.join(__dirname, "../../frontend/dist")));
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 app.get("*", async (request, response) => {
-  response.sendFile(path.join(__dirname, "../../frontend/dist"));
+  response.sendFile(path.join(__dirname, "../front-end/dist/index.html"));
 });
 
 async function connectDB() {
