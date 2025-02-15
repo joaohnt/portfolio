@@ -7,11 +7,11 @@ const About = () => {
       <div className="about-box">
         <h2>About Me</h2>
         <p>
-          Hello! My name is <strong>João Pedro Carvalho Garcia</strong>, and I
-          am a backend developer passionate about technology and scalable
-          solutions. Currently, I am studying Computer Science at Universidade
-          Tiradentes and have experience in developing RESTful APIs, distributed
-          systems, and databases.
+          Hello! My name is João Pedro Carvalho Garcia, and I am a software
+          developer passionate about technology and scalable solutions. I am
+          currently studying Computer Science at Universidade Tiradentes and
+          have experience in developing RESTful APIs, distributed systems, and
+          working with databases.
         </p>
         <p>
           I have strong knowledge in{" "}

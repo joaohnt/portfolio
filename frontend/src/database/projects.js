@@ -29,7 +29,7 @@
 //   },
 //   {
 //     image: "https://microservices.io/i/Microservice_Architecture.png",
-//     name: "Microsserviços Java com Spring Boot e Spring Cloud",
+//     name: "Java Microservices with Spring Boot and Spring Cloud",
 //     desc: "A microservices architecture using Spring Boot and Spring Cloud, applying essential concepts such as API Gateway, Service Discovery, Load Balancing, OAuth2 Authentication with JWT, and Centralized Configuration.",
 //     github: "https://github.com/joaohnt/ms/tree/main",
 //   },
