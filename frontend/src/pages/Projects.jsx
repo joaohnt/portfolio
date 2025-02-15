@@ -7,7 +7,7 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/projects")
+      .get("https://portfolio-5k88.onrender.com/api/projects")
       .then((response) => setProjects(response.data))
       .catch((error) => console.error("Erro ao buscar projetos:", error));
   }, []);
