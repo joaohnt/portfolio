@@ -18,7 +18,7 @@ const Main = () => {
 
           <div className="container-button">
             <Link
-              to="https://github.com/user-attachments/files/18809303/CV_Joao2025.pdf"
+              to="https://github.com/user-attachments/files/21070119/Curriculo.Joao.Pedro.-.dev.2025.pdf"
               className="button2"
             >
               Download CV
